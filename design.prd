@@ -1,0 +1,78 @@
+# 🎧 HIGH-FIDELITY UI SPEC – CONCERT EVENT MANAGEMENT (MODERN SaaS)
+
+## 🎨 1. DESIGN SYSTEM (FOUNDATION)
+### Color Tokens
+- **Primary:** #6C5CE7 (Indigo)
+- **Primary Hover:** #5A4BD1
+- **Secondary:** #00D1B2 (Teal accent)
+- **Background:** #0F1222 (Dark SaaS)
+- **Surface:** #171A2F
+- **Card:** #1E2240
+- **Border:** #2A2F55
+- **Text Primary:** #FFFFFF
+- **Text Secondary:** #AAB0D5
+- **Success:** #22C55E
+- **Warning:** #F59E0B
+- **Danger:** #EF4444
+
+### Typography
+- **Font:** Inter
+- **H1:** 32px / 700
+- **H2:** 24px / 600
+- **H3:** 18px / 600
+- **Body:** 14px / 400
+- **Small:** 12px
+
+### Spacing System (8pt grid)
+- **xs:** 4, **sm:** 8, **md:** 16, **lg:** 24, **xl:** 32
+
+### Radius & Shadow
+- **Radius:** 12px (card), 16px (modal)
+- **Shadow:** soft (0 10px 30px rgba(0,0,0,0.25))
+
+## 🧩 2. CORE COMPONENTS (REACT-READY)
+- **Button:** Primary (filled indigo), Secondary (outline), Ghost (transparent). Sizes: sm/md/lg.
+- **Card:** Background Card token, Padding 16–24px, Hover slight lift + border highlight.
+- **Input:** Filled dark, Border subtle, Focus primary glow.
+- **Modal:** Centered, Blur backdrop.
+- **Badge:** Status: success / warning / danger.
+
+## 🏠 3. LANDING PAGE (HIGH-FI)
+- **Navbar:** Logo (left), Search (center), Login/Register (right).
+- **Hero:** Full width gradient, "Discover Live Music Near You", "Explore Events" CTA.
+- **Event Grid:** 4-column desktop. Cards with Poster (4:5), Title, Date, Price. Hover scale/shadow.
+- **Filter Bar:** Top sticky chips style.
+
+## 🎫 4. EVENT DETAIL PAGE (2-COLUMN)
+- **Left (70%):** Large poster, Title + meta, Tabs (Overview, Lineup, Info).
+- **Right (30% Sticky Card):** Ticket selector, Price tier cards, Quantity stepper, "Buy Ticket" CTA.
+- **Micro UX:** "X tickets left", Animated urgency bar.
+
+## 💳 5. CHECKOUT PAGE (SPLIT)
+- **Left:** Form card.
+- **Right:** Order summary card (sticky).
+- **Payment UI:** Selectable method cards, Primary CTA button.
+
+## 🎟️ 6. USER DASHBOARD
+- **Layout:** Dark Sidebar, Main content cards.
+- **Ticket Card:** Event image, QR code, Status badge.
+
+## 🏗️ 7. ORGANIZER DASHBOARD
+- **Layout:** Collapsible Sidebar, Topbar.
+- **Dashboard:** 4 KPI cards, Line chart (sales), Recent orders table.
+- **Create Event (Stepper UI):** 1 Info (2-col form) → 2 Ticket (Dynamic builder) → 3 Publish (Preview).
+
+## 📱 8. MOBILE DESIGN
+- **Principles:** Bottom navigation, Large tap targets.
+- **Event Detail:** Sticky bottom CTA.
+- **Checkout:** Single column.
+
+## ✨ 9. MOTION & INTERACTION
+- **Hover:** 150ms ease.
+- **Page transition:** fade + slide.
+- **Button press:** scale 0.98.
+
+## 🔥 10. DIFFERENTIATION UI
+- **Fan Engagement:** Follow button (heart icon), Notification bell.
+- **Referral:** Share button with copy link.
+- **Scarcity:** “Almost sold out” badge.
