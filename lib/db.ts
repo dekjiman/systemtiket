@@ -1,6 +1,6 @@
 import { drizzle } from 'drizzle-orm/node-postgres'
 import { Pool } from 'pg'
-import { users, organizers, events, tickets, orders, orderItems, ticketHolders, payments, follows, notifications, carts, cartItems } from './schema'
+import { users, organizers, events, tickets, orders, orderItems, ticketHolders, payments, follows, notifications, carts, cartItems, passwordResetTokens } from './schema'
 
 const connectionString = process.env.DATABASE_URL!
 
@@ -26,6 +26,7 @@ export const db = drizzle(pool, {
     notifications,
     carts,
     cartItems,
+    passwordResetTokens,
   }
 })
 

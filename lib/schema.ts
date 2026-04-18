@@ -148,3 +148,11 @@ export const cartItems = pgTable('cart_items', {
   unitPrice: real('unit_price').notNull(),
   createdAt: timestamp('created_at').notNull().defaultNow(),
 })
+
+export const passwordResetTokens = pgTable('password_reset_tokens', {
+  id: uuid('id').default(sql`gen_random_uuid()`).primaryKey(),
+  userId: uuid('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  token: text('token').notNull().unique(),
+  expiresAt: timestamp('expires_at').notNull(),
+  createdAt: timestamp('created_at').notNull().defaultNow(),
+})
